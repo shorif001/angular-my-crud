@@ -1,0 +1,5 @@
+{
+    "posts": [
+      { "username": "json-server", "email": "test@test.com" }
+    ]
+  }

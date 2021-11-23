@@ -1,4 +1,27 @@
-<h1>sdfdsf</h1>
 
-<app-user></app-user>
-<app-user-info></app-user-info>
+
+<nav class="navbar navbar-expand-md bg-primary">
+    <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/user']" >user</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/userinfo']" >user info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/createuser']"  >create user</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+
+<router-outlet></router-outlet>
