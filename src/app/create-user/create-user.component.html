@@ -4,11 +4,11 @@
         <div class="col-6">
             <form>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">user Name</label>
+                  <label for="name">user Name</label>
                   <input type="text" class="form-control" placeholder="user name" #name>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">E-mail</label>
+                  <label for="email">E-mail</label>
                   <input type="email" class="form-control" placeholder="email" #email>
                 </div>
                 
@@ -34,7 +34,7 @@
                     <td>{{post.email}}</td>
                     <td>
                         <button>Edit</button> &nbsp;
-                     <button>Delete</button>
+                     <button (click)="onDeleteUser(i)">Delete</button>
                     </td>                  
                     </tr>
                   

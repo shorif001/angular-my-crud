@@ -30,6 +30,14 @@ export class CreateUserComponent implements OnInit {
       email:email.value,
       
     });
+    username.value = '';
+    email.value = '';
+  }
+
+  onDeleteUser(id:number){
+    if(confirm('Do you want to delete this user?')){
+      this.posts.splice(id,1);
+    }
   }
 
 }
