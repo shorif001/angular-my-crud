@@ -5,14 +5,14 @@
             <form>
                 <div class="form-group">
                   <label for="exampleInputEmail1">user Name</label>
-                  <input type="email" class="form-control" placeholder="user name" #name>
+                  <input type="text" class="form-control" placeholder="user name" #name>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">E-mail</label>
-                  <input type="password" class="form-control" placeholder="email" #email>
+                  <input type="email" class="form-control" placeholder="email" #email>
                 </div>
                 
-                <!-- <button type="submit" class="btn btn-primary" (click)="onAddUser(name, email)">add</button> -->
+                <button type="submit" class="btn btn-primary" (click)="onAddUser(name, email)">add</button>
                 <!-- uxtrendz youtube channel -->
               </form>
         </div>
@@ -28,12 +28,14 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <button>Edit</button>
-                     <button>Delete</button>                  
+                  <tr *ngFor="let post of posts; index as i">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{post.username}}</td>
+                    <td>{{post.email}}</td>
+                    <td>
+                        <button>Edit</button> &nbsp;
+                     <button>Delete</button>
+                    </td>                  
                     </tr>
                   
                   

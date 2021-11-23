@@ -12,4 +12,24 @@ export class CreateUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  posts=[
+    {
+      username: "Shorif",
+      email: "test@test.com"
+    },
+    {
+      username: "Shorif",
+      email: "test@test.com"
+    }
+  ]
+
+
+  onAddUser(username:any, email:any){
+    this.posts.push({
+      username:username.value,
+      email:email.value,
+      
+    });
+  }
+
 }
