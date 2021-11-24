@@ -13,7 +13,7 @@
                 </div>
                 
                 <button type="submit" class="btn btn-primary" (click)="onAddUser(name, email)">add</button>
-                <!-- uxtrendz youtube channel -->
+                <!-- uxtrendz -->
               </form>
         </div>
         <div class="col-6">
@@ -28,7 +28,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let post of posts; index as i">
+                  <tr *ngFor="let post of userData; index as i">
                     <th scope="row">{{i+1}}</th>
                     <td>{{post.username}}</td>
                     <td>{{post.email}}</td>
