@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsModule } from '@angular/forms';
+import { MyuserComponent } from './myuser/myuser.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     UserComponent,
     UserInfoComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    MyuserComponent
   ],
   imports: [
     BrowserModule,
