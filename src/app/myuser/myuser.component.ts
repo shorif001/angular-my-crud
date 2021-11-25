@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { MyuserService } from './myuser.service';
+import { Muser, MyuserService } from './myuser.service';
 
 @Component({
   selector: 'app-myuser',
@@ -8,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyuserComponent implements OnInit {
 
-  constructor() { }
+  constructor(private MyuserService:MyuserService) { }
 
   ngOnInit(): void {
-    // this.getMyuserList();
+    this.getMyuserList();
   }
 
+  userData:any =  [];
+  getMyuserList(){
+    this.MyuserService.getMyuserList().subscribe((response)=>{
+      console.log(response);
+      this.userData = response;
+    })
+  }
   // getMyuserList(){
   //   this.MyuserService.getMyuserList().subscribe((datat:any)=>{
   //     console.log(datat);

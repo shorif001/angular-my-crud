@@ -1,1 +1,33 @@
 <p>myuser works!</p>
+
+<div class="container">
+    <div class="row">
+          <div class="col-12">
+            <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let user of userData; index as i">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{user.username}}</td>
+                    <td>{{user.email}}</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
+              
+              
+        </div>
+    </div>
+</div>

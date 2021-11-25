@@ -9,6 +9,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsModule } from '@angular/forms';
 import { MyuserComponent } from './myuser/myuser.component';
+import { CreateMyuserComponent } from './create-myuser/create-myuser.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MyuserComponent } from './myuser/myuser.component';
     UserComponent,
     UserInfoComponent,
     CreateUserComponent,
-    MyuserComponent
+    MyuserComponent,
+    CreateMyuserComponent
   ],
   imports: [
     BrowserModule,
