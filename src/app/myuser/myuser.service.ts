@@ -15,13 +15,12 @@ export class MyuserService {
     return this.http.get<Muser>(this.myUserUrl);
   }
 
-
+  
 
   
 }
 
 export interface Muser{
-  
   username:string;
   email:string
   
