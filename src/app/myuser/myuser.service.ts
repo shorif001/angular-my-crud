@@ -15,7 +15,9 @@ export class MyuserService {
     return this.http.get<Muser>(this.myUserUrl);
   }
 
-  
+  createUser(users:Muser):Observable<any>{
+    return this.http.post<any>(this.myUserUrl, users);
+  }
 
   
 }

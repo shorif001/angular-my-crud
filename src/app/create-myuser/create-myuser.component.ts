@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Muser } from '../myuser/myuser.service';
+import { Muser, MyuserService } from '../myuser/myuser.service';
 
 @Component({
   selector: 'app-create-myuser',
@@ -13,7 +13,7 @@ export class CreateMyuserComponent implements OnInit {
     userName: '',
     email: ''
   }
-  constructor() { }
+  constructor(private myuserService:MyuserService) { }
 
   ngOnInit(): void {
   }
