@@ -10,6 +10,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsModule } from '@angular/forms';
 import { MyuserComponent } from './myuser/myuser.component';
 import { CreateMyuserComponent } from './create-myuser/create-myuser.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CreateMyuserComponent } from './create-myuser/create-myuser.component';
     UserInfoComponent,
     CreateUserComponent,
     MyuserComponent,
-    CreateMyuserComponent
+    CreateMyuserComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
