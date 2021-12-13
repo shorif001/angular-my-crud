@@ -45,6 +45,59 @@ getData(val:string){
 }
 
 
+// input field value
+
+title = 'shorif'
+
+displayVal="";
+getValue(val:string){
+  console.log(val);
+  this.displayVal=val
+}
+// click value
+displayVal1="";
+getValue1(val:string){
+  console.log(val);
+  this.displayVal1=val
+}
+
+
+
+// counter example
+count = 0;
+counter(type:string){
+// this.count++
+type==='plus'?this.count++:this.count--
+}
+
+
+count1=0;
+counter1(type1:string){
+  // this.count1++
+  type1==='plus1'?this.count1++:this.count1--
+}
+
+// property binding
+name1:string="shorif";
+disable=true;
+
+// if else
+
+show=false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   constructor() { }

@@ -52,3 +52,47 @@
 <input type="text" placeholder="input box" #box4 (input)="getData(box4.value)" />
 
 <h1 (mouseover)="getData('mouse over')">Mouseover event</h1>
+<br>
+<h1 (mouseleave)="getData('mouse Leave')">MouseLeave event</h1>
+
+<br><br><br>
+
+<h1>get input field value</h1>
+<h5>{{title}}</h5>
+<input type="text" #box5 (keyup)="getValue(box5.value)" placeholder="username" name="username" id="username">
+<p>Box value is : {{displayVal}}</p>
+<br><br>
+
+
+<input type="text" #box6 placeholder="username" name="username" id="username">
+<p>Box value is : {{displayVal1}}</p>
+
+<!-- button click -->
+<button (click)="getValue1(box6.value)">Click me</button>
+
+<br><br><br>
+<!-- counter example -->
+
+<button (click)="counter('minus')">--</button>
+<p>counter : {{count}}</p>
+<button (click)="counter('plus')">++</button>
+
+<br><br>
+<button (click)="counter1('minus1')">-</button>
+<p>count : {{count1}}</p>
+<button (click)="counter1('plus1')">+</button>
+<br><br>
+
+<!-- property binding -->
+<input type="text" value={{name1}} disabled={{disable}>
+<input type="text" [value]=name1 [disabled]=true>
+
+<br><br>
+<!-- if else -->
+<h1>if else</h1>
+<h1 *ngIf="show">code</h1>
+
+
+<ng-template>
+
+</ng-template>
