@@ -87,12 +87,24 @@
 <input type="text" value={{name1}} disabled={{disable}>
 <input type="text" [value]=name1 [disabled]=true>
 
+
+
 <br><br>
 <!-- if else -->
 <h1>if else</h1>
-<h1 *ngIf="show">code</h1>
 
+<!-- <h1 *ngIf="show">code</h1> -->
 
-<ng-template>
+<h1 *ngIf="show else elseBlock">code</h1>
 
+<ng-template #elseBlock>
+  <h1>Else Condition</h1>
 </ng-template>
+
+<br>
+<br>
+
+<h1>ngFor</h1>
+
+<!-- <p *ngFor="let item of users">{{item}}</p> -->
+<p *ngFor="let item of users"> {{name}} == {{item.email}} == {{item.phone}}</p>

@@ -86,9 +86,22 @@ disable=true;
 show=false
 
 
+//ngFor
+
+// users=['shorif', 'rohim', 'korim'];
 
 
+users=[
+  {name: "shorif", email: "a@B.com", phone: "010101"},
+  {name: "rohim", email: "r@r.com", phone: "010102"}
+];
 
+
+//nested loop
+
+nestedLoop = [
+  {name: "a",phone:"010101", email:"b@b.com"}
+]
 
 
 
