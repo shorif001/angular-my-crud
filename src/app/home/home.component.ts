@@ -81,7 +81,7 @@ counter1(type1:string){
 name1:string="shorif";
 disable=true;
 
-// if else
+// if else 
 
 show=false
 
@@ -91,16 +91,18 @@ show=false
 // users=['shorif', 'rohim', 'korim'];
 
 
-users=[
-  {name: "shorif", email: "a@B.com", phone: "010101"},
-  {name: "rohim", email: "r@r.com", phone: "010102"}
-];
+// users=[
+//   {name: "shorif", email: "a@B.com", phone: "010101"},
+//   {name: "rohim", email: "r@r.com", phone: "010102"}
+// ];
 
 
 //nested loop
 
 nestedLoop = [
-  {name: "a",phone:"010101", email:"b@b.com"}
+  {name: "a",phone:"1111", email:"a@a.com", accounts:['facebook', 'gmail', 'yahoomail']},
+  {name: "b",phone:"2222", email:"b@b.com", accounts:['youtube', 'instagram', 'ymail']},
+  {name: "c",phone:"3333", email:"c@c.com", accounts:['linkedin', 'gmail', 'aolmail']}
 ]
 
 

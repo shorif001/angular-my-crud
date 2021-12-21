@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+
+<ng-template [ngIf]="color==='red'">
+  <h1 style="color: red;">Red Color</h1>
+</ng-template>
+
+<ng-template [ngIf]="color==='green'">
+  <h1 style="color: green;">Green Color</h1>
+</ng-template>
+
+<br><br>
+
+<h1>Switch Case</h1>
+
+<div [ngSwitch]="color1">
+  <p *ngSwitchCase="'red'" style="color: red;">Red Color</p>
+  <p *ngSwitchCase="'green'" style="color: green;">green Color</p>
+  <p *ngSwitchCase="'blue'" style="color: blue;">blue Color</p>
+  <p *ngSwitchDefault>Unknown Color</p>
+</div>
+
+<br><br>
+
+<p>get input field data</p>
+
+<form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+
+  <input type="text" ngModel name="user" placeholder="Enter User name">
+  <br><br>
+  <input type="email" ngModel name="email" placeholder="Enter User email">
+  <br><br>
+  <input type="password" ngModel name="password" placeholder="Enter User password">
+  <br><br>
+  <button class="btn btn-primary">Register</button>
+
+</form>

@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { MyuserComponent } from './myuser/myuser.component';
 import { CreateMyuserComponent } from './create-myuser/create-myuser.component';
 import { HomeComponent } from './home/home.component';
+import { NewComponentComponent } from './new-component/new-component.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     CreateUserComponent,
     MyuserComponent,
     CreateMyuserComponent,
-    HomeComponent
+    HomeComponent,
+    NewComponentComponent
   ],
   imports: [
     BrowserModule,

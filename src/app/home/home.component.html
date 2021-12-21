@@ -95,10 +95,16 @@
 
 <!-- <h1 *ngIf="show">code</h1> -->
 
-<h1 *ngIf="show else elseBlock">code</h1>
+<h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+
+<ng-template #ifBlock>
+  <p>If Condition</p>
+</ng-template>
 
 <ng-template #elseBlock>
-  <h1>Else Condition</h1>
+
+  <p>Else Condition</p>
+  
 </ng-template>
 
 <br>
@@ -107,4 +113,19 @@
 <h1>ngFor</h1>
 
 <!-- <p *ngFor="let item of users">{{item}}</p> -->
-<p *ngFor="let item of users"> {{name}} == {{item.email}} == {{item.phone}}</p>
+<!-- <p *ngFor="let item of users"> {{name}} == {{item.email}} == {{item.phone}}</p> -->
+
+
+<h1>nested Loop</h1>
+<ul *ngFor="let user of nestedLoop">
+  <li>{{user.name}}=={{user.phone}}=={{user.email}}</li>
+  <li>{{user.name}}</li>
+  <li>{{user.phone}}</li>
+  <li>{{user.email}}</li>
+
+  <ul *ngFor="let account of user.accounts">
+    <li>{{account}}</li>
+  </ul>
+
+</ul>
+
