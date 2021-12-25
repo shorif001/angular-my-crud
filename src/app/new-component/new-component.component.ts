@@ -25,6 +25,25 @@ getData(data:NgForm){
 }
 
 
+// todo list
+
+list:any=[];
+
+addTask(item:string){
+  console.log(item);
+  this.list.push({id:this.list.length,name:item})
+  console.log(this.list);
+}
+
+removeTask(id:number){
+  console.log(id);
+  this.list=this.list.filter((item: { id: number; })=>item.id!==id);
+}
+
+
+
+
+
 
 
 
