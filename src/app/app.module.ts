@@ -12,6 +12,7 @@ import { MyuserComponent } from './myuser/myuser.component';
 import { CreateMyuserComponent } from './create-myuser/create-myuser.component';
 import { HomeComponent } from './home/home.component';
 import { NewComponentComponent } from './new-component/new-component.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NewComponentComponent } from './new-component/new-component.component';
     MyuserComponent,
     CreateMyuserComponent,
     HomeComponent,
-    NewComponentComponent
+    NewComponentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
