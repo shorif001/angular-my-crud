@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practice';
+
+  parentData = 5;
+  updateData(){
+    this.parentData=Math.floor(Math.random()*10);
+  }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>{{title}}</h1>
 
 <ng-template [ngIf]="color==='red'">
@@ -60,3 +61,52 @@
   <input type="password" ngModel name="password" placeholder="Enter your password"><br>
   <button>Click me</button>
 </form>
+=======
+<h1>{{title}}</h1>
+
+<ng-template [ngIf]="color==='red'">
+  <h1 style="color: red;">Red Color</h1>
+</ng-template>
+
+<ng-template [ngIf]="color==='green'">
+  <h1 style="color: green;">Green Color</h1>
+</ng-template>
+
+<br><br>
+
+<h1>Switch Case</h1>
+
+<div [ngSwitch]="color1">
+  <p *ngSwitchCase="'red'" style="color: red;">Red Color</p>
+  <p *ngSwitchCase="'green'" style="color: green;">green Color</p>
+  <p *ngSwitchCase="'blue'" style="color: blue;">blue Color</p>
+  <p *ngSwitchDefault>Unknown Color</p>
+</div>
+
+<br><br>
+
+<p>get input field data</p>
+
+<form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+
+  <input type="text" ngModel name="user" placeholder="Enter User name">
+  <br><br>
+  <input type="email" ngModel name="email" placeholder="Enter User email">
+  <br><br>
+  <input type="password" ngModel name="password" placeholder="Enter User password">
+  <br><br>
+  <button class="btn btn-primary">Register</button>
+
+</form>
+
+
+<br>
+<br>
+<input type="text" placeholder="enter new task" #task />
+<br><br>
+<button (click)="addTask(task.value)">Add New Task</button>
+
+<h5 *ngFor="let item of list">
+  <li>{{item.name}} <button (click)="removeTask(item.id)">remove</button></li>
+</h5>
+>>>>>>> 254e55672b2700e80a27504d7def434396361db8
