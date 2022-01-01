@@ -24,12 +24,22 @@ getData(data:NgForm){
   console.log(data);
 }
 
+getname11:any= '';
+getName11(data:any){
+  console.log(data);
+  this.getname11 = data;
+}
+
+
+inputFieldData(data:any){
+  console.log(data);
+}
 
 
 
-
-
-
+addMeFirst(data:any){
+ console.log(data); 
+}
 
 
 

@@ -34,3 +34,29 @@
   <button class="btn btn-primary">Register</button>
 
 </form>
+
+
+
+<br><br>
+
+<h1 >{{getname11}}</h1>
+<button (click)="getName11('Shorif')">Click Me</button>
+
+
+<form #basicForm1="ngForm" (submit)="inputFieldData(basicForm1.value)">
+  <input type="text" ngModel name="userName" placeholder="Enter your name"><br>
+  <input type="email" ngModel name="email" placeholder="Enter your email"><br>
+  <input type="password" ngModel name="password" placeholder="Enter your password"><br>
+  <button>click me</button>
+</form>
+
+
+
+<br><br><br>
+
+<form #basicForm22="ngForm" (submit)="addMeFirst(basicForm22.value)">
+  <input type="text" ngModel name="user-name" placeholder="Enter your username"><br>
+  <input type="email" ngModel name="email" placeholder="Enter your email"><br>
+  <input type="password" ngModel name="password" placeholder="Enter your password"><br>
+  <button>Click me</button>
+</form>
