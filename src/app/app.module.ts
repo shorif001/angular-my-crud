@@ -13,6 +13,7 @@ import { CreateMyuserComponent } from './create-myuser/create-myuser.component';
 import { HomeComponent } from './home/home.component';
 import { NewComponentComponent } from './new-component/new-component.component';
 import { ChildComponent } from './child/child.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ChildComponent } from './child/child.component';
     CreateMyuserComponent,
     HomeComponent,
     NewComponentComponent,
-    ChildComponent
+    ChildComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,

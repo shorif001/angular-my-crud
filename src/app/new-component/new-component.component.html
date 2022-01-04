@@ -87,11 +87,13 @@
 
 <p>get input field data</p>
 
-<form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+<form role="form" ngForm #basicForm="ngForm" (submit)="getData(basicForm.value)">
 
-  <input type="text" ngModel name="user" placeholder="Enter User name">
-  <br><br>
-  <input type="email" ngModel name="email" placeholder="Enter User email">
+  <div ngModelGroup="contact">
+    <input type="text" ngModel name="user" placeholder="Enter User name 1">
+    <br><br>
+    <input type="email" ngModel name="email" placeholder="Enter User email">
+  </div>
   <br><br>
   <input type="password" ngModel name="password" placeholder="Enter User password">
   <br><br>

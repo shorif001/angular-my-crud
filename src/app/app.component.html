@@ -38,5 +38,20 @@
 <router-outlet></router-outlet>
 
 
-<app-child [item]="parentData"></app-child>
-<button (click)="updateData()">Update child component</button>
+<br><br>
+
+
+<app-child pData={{pData}}></app-child>
+
+<button (click)="updateData1()">Click me</button>
+
+
+
+<h1>user-details component</h1>
+
+
+
+<ul *ngFor="let user of userDetails">
+  <app-user-details [item]="user"></app-user-details>
+  
+</ul>

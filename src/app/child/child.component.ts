@@ -9,7 +9,10 @@ export class ChildComponent implements OnInit {
 
   constructor() { }
 
-@Input() item=0
+  @Input() pData:any
+  ngOnChanges(){
+    console.log("Parent data updated");
+  }
 
   ngOnInit(): void {
   }

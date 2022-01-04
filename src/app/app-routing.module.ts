@@ -9,6 +9,9 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
+  // {
+  //   path:"", redirectTo:'home',pathMatch: "full"
+  // },
   
   {
     path:"home", component:HomeComponent
