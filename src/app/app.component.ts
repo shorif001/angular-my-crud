@@ -15,6 +15,15 @@ export class AppComponent {
 
 pData="This is parent data";
 
+outputString:string=""
+
+getData3(value:any){
+  this.outputString = value;
+console.log(value);
+}
+
+
+
 updateData1(){
   this.pData="Parent data updated";
 }
@@ -28,5 +37,15 @@ userDetails=[
   {name:'jamil', email:'jamil@gmail.com'},
   {name:'faruk', email:'faruk@gmail.com'},
 ]
+
+//child to parent
+
+childDataReceived:string="";
+
+receivedData(event: string){
+console.log(event);
+this.childDataReceived = event;
+}
+
 
 }

@@ -41,7 +41,7 @@
 <br><br>
 
 
-<app-child pData={{pData}}></app-child>
+<!-- <app-child pData={{pData}}></app-child> -->
 
 <button (click)="updateData1()">Click me</button>
 
@@ -52,6 +52,12 @@
 
 
 <ul *ngFor="let user of userDetails">
-  <app-user-details [item]="user"></app-user-details>
-  
+  <app-user-details  [item]="user"></app-user-details>
 </ul>
+
+
+<h4>child to parent</h4>
+
+<p>{{childDataReceived}}</p>
+
+<app-child (childStringData)="receivedData($event)"></app-child>
