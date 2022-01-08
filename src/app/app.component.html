@@ -6,17 +6,47 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   
+
+
+
+    
+
+
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" [routerLink]="['/home']">Home</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" [routerLink]="['/new']">New component</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" [routerLink]="['/user']">user</a>
-        </li>
+
+
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="nav-item dropdown-bg">
+              <a class="nav-link" [routerLink]="['/child']">new-child</a>
+            </li>
+            <li class="nav-item dropdown-bg">
+              <a class="nav-link" [routerLink]="['/parent']">new-parent</a>
+            </li>
+            <li class="nav-item dropdown-bg">
+              <a class="nav-link" [routerLink]="['/new']">New component</a>
+            </li>
+            <li class="nav-item dropdown-bg">
+              <a class="nav-link" [routerLink]="['/user']">user</a>
+            </li>
+            <li class="nav-item dropdown-bg">
+              <a class="nav-link" [routerLink]="['/smart']">Smart</a>
+            </li>
+            <li class="nav-item dropdown-bg">
+              <a class="nav-link" [routerLink]="['/dumb']">Dumb</a>
+            </li>
+          </div>
+        </div>
+
+        
+        
         <li class="nav-item">
             <a class="nav-link" [routerLink]="['/userinfo']">user info</a>
           </li>
@@ -43,7 +73,7 @@
 
 <!-- <app-child pData={{pData}}></app-child> -->
 
-<button (click)="updateData1()">Click me</button>
+<!-- <button (click)="updateData1()">Click me</button>
 
 
 
@@ -60,4 +90,4 @@
 
 <p>{{childDataReceived}}</p>
 
-<app-child (childStringData)="receivedData($event)"></app-child>
+<app-child (childStringData)="receivedData($event)"></app-child> -->

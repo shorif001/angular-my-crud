@@ -14,6 +14,10 @@ import { HomeComponent } from './home/home.component';
 import { NewComponentComponent } from './new-component/new-component.component';
 import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { NewChildComponent } from './new-child/new-child.component';
+import { NewParentComponent } from './new-parent/new-parent.component';
+import { SmartComponent } from './smart/smart.component';
+import { DumbComponent } from './dumb/dumb.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     HomeComponent,
     NewComponentComponent,
     ChildComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    NewChildComponent,
+    NewParentComponent,
+    SmartComponent,
+    DumbComponent
   ],
   imports: [
     BrowserModule,
