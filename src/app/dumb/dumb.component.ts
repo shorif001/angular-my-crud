@@ -1,4 +1,4 @@
-import { Component,  OnInit} from '@angular/core';
+import { Component,  Input,  OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-dumb',
@@ -7,7 +7,7 @@ import { Component,  OnInit} from '@angular/core';
 })
 export class DumbComponent implements OnInit {
 
-  
+  @Input() videos:any;
   constructor() { }
 
   ngOnInit(): void {

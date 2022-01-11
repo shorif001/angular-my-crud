@@ -1,4 +1,13 @@
-<p>new-parent works!</p>
 
 
-<app-new-child [receivedParent]='parentData' (even)="receivedChild()"></app-new-child>
+<!-- <app-new-child [receivedParent]='parentData' (even)="receivedChild()"></app-new-child> -->
+
+<!-- <h1>2nd time practice (parent)</h1> -->
+<div class="container-fluid">
+    <div class="parent-field">
+        <h1>parent</h1>
+
+<app-new-child [myInput]="parentData"></app-new-child>
+
+    </div>
+</div>

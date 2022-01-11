@@ -47,14 +47,17 @@
 <div class="container">
   <div class="row">
     <div *ngFor="let udata of userData">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="{{udata.thumb}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{udata.title}}</h5>
-          <p class="card-text">{{udata.description}}</p>
-          <a href="#" class="btn btn-primary">Select Video</a>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{{udata.thumb}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{udata.title}}</h5>
+            <p class="card-text">{{udata.description}}</p>
+            <a href="#" class="btn btn-primary">Select Video</a>
+          </div>
         </div>
       </div>
      </div>
   </div>
 </div>
+
