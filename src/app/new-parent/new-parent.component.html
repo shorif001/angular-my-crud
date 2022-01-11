@@ -6,8 +6,10 @@
 <div class="container-fluid">
     <div class="parent-field">
         <h1>parent</h1>
+        <p>value from child :</p>
+        <p>Parent Value : {{parentData}}</p>
 
-<app-new-child [myInput]="parentData"></app-new-child>
-
+<app-new-child [state]="sendData"></app-new-child>
+<!-- https://www.youtube.com/watch?v=DUe8y6QVPMk&ab_channel=LessononCoding -->
     </div>
 </div>
