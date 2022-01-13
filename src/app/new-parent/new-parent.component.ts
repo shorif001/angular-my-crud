@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class NewParentComponent implements OnInit {
 
 
-  parentData="I am parent";
+  parent="I am parent";
+  childData:any;
 
   // https://www.youtube.com/watch?v=2GH23ys0tdc&ab_channel=Let%27sProgram
 
+  setDataFromChild(data:any){
+    this.childData = data
+  }
 
   receivedChild(){
     
